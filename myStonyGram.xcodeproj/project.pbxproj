@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		165AF48417859E7800BEC310 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 165AF48317859E7800BEC310 /* UIKit.framework */; };
+		165AF48617859E7800BEC310 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 165AF48517859E7800BEC310 /* Foundation.framework */; };
+		165AF48817859E7800BEC310 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 165AF48717859E7800BEC310 /* CoreGraphics.framework */; };
+		165AF48E17859E7900BEC310 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 165AF48C17859E7900BEC310 /* InfoPlist.strings */; };
+		165AF49017859E7900BEC310 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 165AF48F17859E7900BEC310 /* main.m */; };
+		165AF49417859E7900BEC310 /* StonyGramAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 165AF49317859E7900BEC310 /* StonyGramAppDelegate.m */; };
+		165AF49617859E7900BEC310 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 165AF49517859E7900BEC310 /* Default.png */; };
+		165AF49817859E7900BEC310 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 165AF49717859E7900BEC310 /* Default@2x.png */; };
+		165AF49A17859E7900BEC310 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 165AF49917859E7900BEC310 /* Default-568h@2x.png */; };
+		165AF49D17859E7900BEC310 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165AF49B17859E7900BEC310 /* MainStoryboard.storyboard */; };
+		165AF4A017859E7900BEC310 /* StonyGramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165AF49F17859E7900BEC310 /* StonyGramViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		165AF48017859E7800BEC310 /* myStonyGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myStonyGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		165AF48317859E7800BEC310 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		165AF48517859E7800BEC310 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		165AF48717859E7800BEC310 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		165AF48B17859E7900BEC310 /* myStonyGram-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "myStonyGram-Info.plist"; sourceTree = "<group>"; };
+		165AF48D17859E7900BEC310 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		165AF48F17859E7900BEC310 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		165AF49117859E7900BEC310 /* myStonyGram-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myStonyGram-Prefix.pch"; sourceTree = "<group>"; };
+		165AF49217859E7900BEC310 /* StonyGramAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StonyGramAppDelegate.h; sourceTree = "<group>"; };
+		165AF49317859E7900BEC310 /* StonyGramAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StonyGramAppDelegate.m; sourceTree = "<group>"; };
+		165AF49517859E7900BEC310 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		165AF49717859E7900BEC310 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		165AF49917859E7900BEC310 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		165AF49C17859E7900BEC310 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		165AF49E17859E7900BEC310 /* StonyGramViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StonyGramViewController.h; sourceTree = "<group>"; };
+		165AF49F17859E7900BEC310 /* StonyGramViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StonyGramViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		165AF47D17859E7800BEC310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				165AF48417859E7800BEC310 /* UIKit.framework in Frameworks */,
+				165AF48617859E7800BEC310 /* Foundation.framework in Frameworks */,
+				165AF48817859E7800BEC310 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		165AF47717859E7800BEC310 = {
+			isa = PBXGroup;
+			children = (
+				165AF48917859E7800BEC310 /* myStonyGram */,
+				165AF48217859E7800BEC310 /* Frameworks */,
+				165AF48117859E7800BEC310 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		165AF48117859E7800BEC310 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				165AF48017859E7800BEC310 /* myStonyGram.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		165AF48217859E7800BEC310 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				165AF48317859E7800BEC310 /* UIKit.framework */,
+				165AF48517859E7800BEC310 /* Foundation.framework */,
+				165AF48717859E7800BEC310 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		165AF48917859E7800BEC310 /* myStonyGram */ = {
+			isa = PBXGroup;
+			children = (
+				165AF49217859E7900BEC310 /* StonyGramAppDelegate.h */,
+				165AF49317859E7900BEC310 /* StonyGramAppDelegate.m */,
+				165AF49B17859E7900BEC310 /* MainStoryboard.storyboard */,
+				165AF49E17859E7900BEC310 /* StonyGramViewController.h */,
+				165AF49F17859E7900BEC310 /* StonyGramViewController.m */,
+				165AF48A17859E7900BEC310 /* Supporting Files */,
+			);
+			path = myStonyGram;
+			sourceTree = "<group>";
+		};
+		165AF48A17859E7900BEC310 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				165AF48B17859E7900BEC310 /* myStonyGram-Info.plist */,
+				165AF48C17859E7900BEC310 /* InfoPlist.strings */,
+				165AF48F17859E7900BEC310 /* main.m */,
+				165AF49117859E7900BEC310 /* myStonyGram-Prefix.pch */,
+				165AF49517859E7900BEC310 /* Default.png */,
+				165AF49717859E7900BEC310 /* Default@2x.png */,
+				165AF49917859E7900BEC310 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		165AF47F17859E7800BEC310 /* myStonyGram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 165AF4A317859E7900BEC310 /* Build configuration list for PBXNativeTarget "myStonyGram" */;
+			buildPhases = (
+				165AF47C17859E7800BEC310 /* Sources */,
+				165AF47D17859E7800BEC310 /* Frameworks */,
+				165AF47E17859E7800BEC310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myStonyGram;
+			productName = myStonyGram;
+			productReference = 165AF48017859E7800BEC310 /* myStonyGram.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		165AF47817859E7800BEC310 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = StonyGram;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Rahul Sarna";
+			};
+			buildConfigurationList = 165AF47B17859E7800BEC310 /* Build configuration list for PBXProject "myStonyGram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 165AF47717859E7800BEC310;
+			productRefGroup = 165AF48117859E7800BEC310 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				165AF47F17859E7800BEC310 /* myStonyGram */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		165AF47E17859E7800BEC310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				165AF48E17859E7900BEC310 /* InfoPlist.strings in Resources */,
+				165AF49617859E7900BEC310 /* Default.png in Resources */,
+				165AF49817859E7900BEC310 /* Default@2x.png in Resources */,
+				165AF49A17859E7900BEC310 /* Default-568h@2x.png in Resources */,
+				165AF49D17859E7900BEC310 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		165AF47C17859E7800BEC310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				165AF49017859E7900BEC310 /* main.m in Sources */,
+				165AF49417859E7900BEC310 /* StonyGramAppDelegate.m in Sources */,
+				165AF4A017859E7900BEC310 /* StonyGramViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		165AF48C17859E7900BEC310 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				165AF48D17859E7900BEC310 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		165AF49B17859E7900BEC310 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				165AF49C17859E7900BEC310 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		165AF4A117859E7900BEC310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		165AF4A217859E7900BEC310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		165AF4A417859E7900BEC310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myStonyGram/myStonyGram-Prefix.pch";
+				INFOPLIST_FILE = "myStonyGram/myStonyGram-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		165AF4A517859E7900BEC310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myStonyGram/myStonyGram-Prefix.pch";
+				INFOPLIST_FILE = "myStonyGram/myStonyGram-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		165AF47B17859E7800BEC310 /* Build configuration list for PBXProject "myStonyGram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				165AF4A117859E7900BEC310 /* Debug */,
+				165AF4A217859E7900BEC310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		165AF4A317859E7900BEC310 /* Build configuration list for PBXNativeTarget "myStonyGram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				165AF4A417859E7900BEC310 /* Debug */,
+				165AF4A517859E7900BEC310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 165AF47817859E7800BEC310 /* Project object */;
+}
