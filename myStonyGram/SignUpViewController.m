@@ -63,6 +63,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
+- (IBAction)goBack:(id)sender {
+    
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    
+}
 
 - (void)didReceiveMemoryWarning
 {

@@ -47,9 +47,7 @@
     self.tableView.backgroundColor = [UIColor colorWithRed:242.0/255 green:235.0/255 blue:241.0/255 alpha:1.0];
     
     self.tableView.separatorColor = [UIColor clearColor];
-    
-    self.pictureListData = [[NSMutableArray alloc] init];
-        
+            
 }
 
 //  When the view reappears, read new data for table
@@ -68,9 +66,15 @@
 - (void)readDataForTable
 {
     //  Grab the data
-    
     _pictureListData = [CoreDataHelper getObjectsForEntity:@"Photo" withSortKey:@"photoDate" andSortAscending:NO andContext:_managedObjectContext];
     
+    [_pictureListData retain];
+    [_pictureListData retain];
+    [_pictureListData retain];
+    [_pictureListData retain];
+    [_pictureListData retain];
+    [_pictureListData retain];
+    [_pictureListData retain];
 
     //  Force table refresh
     [self.tableView reloadData];
@@ -78,7 +82,7 @@
 
 
 //Prepare for Segue Methods
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender
 {
         
    if([[segue identifier] isEqualToString:@"AddPicture"]){
@@ -90,14 +94,22 @@
 
     }
     else if([[segue identifier] isEqualToString:@"CommentSegue"]){
-        ShowCommentsViewController *pld = (ShowCommentsViewController *)segue.destinationViewController;
         
-        //  Pass the managed object context to the destination view controller
-        pld.managedObjectContext = self.managedObjectContext;
-                                
-        NSLog(@"uniq ->> %@", _date);
-        
-        pld.date = _date;
+//        ShowCommentsViewController *scvc = (ShowCommentsViewController *)segue.destinationViewController;
+//        
+//        //  Pass the managed object context to the destination view controller
+//        scvc.managedObjectContext = self.managedObjectContext;
+//                                
+//        NSLog(@"uniq ->> %@", _date);
+//        
+//        scvc.date = _date;
+//        
+//        CGPoint center= sender.center;
+//        CGPoint rootViewPoint = [sender.superview convertPoint:center toView:self.tableView];
+//        NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:rootViewPoint];
+//        NSLog(@"==> %ld",(long)indexPath.row);
+//        
+//        scvc.currentPhotoComment = _pictureListData[indexPath.row];
     }
     
 }
@@ -159,6 +171,7 @@
     
             cell.usernameLabel.text = currentCell.photographer.username;
     
+//            [cell.commentButton addTarget:self action:@selector(getIndexOfTouchedCell) forControlEvents:UIControlStateNormal];
     
                 NSLog(@"cell->-> %@",currentCell.location);
             

@@ -11,7 +11,7 @@
 #import "Photo.h"
 
 
-@interface customCell : UITableViewCell <UIActionSheetDelegate>{
+@interface customCell : UITableViewCell <UIActionSheetDelegate,UITableViewDelegate>{
     SLComposeViewController *mySLComposerSheet;
 
 }

@@ -38,6 +38,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
+        
     }
     return self;
 }
@@ -84,6 +85,7 @@
     self.socialContainer.backgroundColor = [UIColor colorWithRed:220.0/255 green:214.0/255 blue:219.0/255 alpha:1.0f];
     
     self.selectionStyle = UITableViewCellSelectionStyleNone;
+    
   
 }
 

@@ -22,19 +22,19 @@
     //  Grab the data
     
         
-    NSSet *comments = self.currentPhotoComment.photoComments;
-    
-    for (Comments *comment in comments){
-        [_commentListData addObject:comment];
-        NSLog(@"Comments = %d",_commentListData.count);
-    }
-    
-    _pictureListData = [NSMutableArray arrayWithArray:[self.currentPhotoComment.photoComments allObjects]];
-    
-    [_pictureListData retain];
+//    NSSet *comments = self.currentPhotoComment.photoComments;
+//    
+//    for (Comments *comment in comments){
+//        [_commentListData addObject:comment];
+//        NSLog(@"Comments = %d",_commentListData.count);
+//    }
+//    
+//    _pictureListData = [NSMutableArray arrayWithArray:[self.currentPhotoComment.photoComments allObjects]];
+//    
+//    [_pictureListData retain];
     
     //  Force table refresh
-    [self.tableView reloadData];
+//    [self.tableView reloadData];
 }
 
 - (void)viewDidLoad
@@ -44,18 +44,18 @@
     
     [super loadView];
         
-    _commentListData = [[[NSMutableSet alloc] init]autorelease];
+//    _commentListData = [[[NSMutableSet alloc] init]autorelease];
+//    
+//    [_commentListData retain];
+//        
+//    _currentPhotoComment = [Photo photoWithDate:_date inManagedObjectContext:_managedObjectContext];
+//    
+//    if(_currentPhotoComment == nil)
+//        NSLog(@"Nil Error");
     
-    [_commentListData retain];
-        
-    _currentPhotoComment = [Photo photoWithDate:_date inManagedObjectContext:_managedObjectContext];
-    
-    if(_currentPhotoComment == nil)
-        NSLog(@"Nil Error");
-    
-    [_currentPhotoComment retain];
+//    [_currentPhotoComment retain];
 
-    [self readDataForTable];
+//    [self readDataForTable];
     
     // setting up add button
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addTag)];

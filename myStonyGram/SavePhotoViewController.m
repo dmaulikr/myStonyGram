@@ -59,8 +59,7 @@
         // [_myPhoto setImage:[UIImage imageWithData:[_currentPicture location]]];
     }
     else{
-        UIImage *defaultImage = [UIImage imageNamed:@"images.jpeg"];
-        self.myPhoto.image = defaultImage;
+        self.myPhoto.image = [UIImage imageNamed:@"images.jpeg"];
         defaultPhoto = YES;
     }
     
@@ -73,14 +72,14 @@
     self.photoLabel.layer.borderColor = [UIColor colorWithWhite:0.9 alpha:0.7].CGColor;
     self.photoLabel.layer.borderWidth = 1.0f;
     
-    UIView* leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 41, 20)];
-    self.photoLabel.leftViewMode = UITextFieldViewModeAlways;
-    self.photoLabel.leftView = leftView;
+//    UIView* leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 41, 20)];
+//    self.photoLabel.leftViewMode = UITextFieldViewModeAlways;
+//    self.photoLabel.leftView = leftView;
+//    
+//    self.postButton.layer.cornerRadius = 3.0F;
+//        
+//    [leftView release];
     
-    self.postButton.layer.cornerRadius = 3.0F;
-        
-    [leftView release];
-        
 }
 
 // Take Photo From Camera or Choose Existing... (Used UIACtionSheet for implementation)
@@ -302,6 +301,8 @@
     
     if (![_managedObjectContext save:&error])
         NSLog(@"Failed to add new picture with error: %@", [error domain]);
+    
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
     
 }
 /*

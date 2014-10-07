@@ -15,7 +15,7 @@
 #import "Photo.h"
 #import "Users.h"
 
-@interface SavePhotoViewController : UIViewController <UITextFieldDelegate,UIActionSheetDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate,UIActionSheetDelegate,UITableViewDataSource,UITableViewDelegate,NSFetchedResultsControllerDelegate>{
+@interface SavePhotoViewController : UIViewController <UITextFieldDelegate,UIActionSheetDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate,UIActionSheetDelegate,NSFetchedResultsControllerDelegate>{
 }
 
 
