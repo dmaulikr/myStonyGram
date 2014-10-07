@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Comments" representedClassName="Comments" syncable="YES">
+        <attribute name="commentDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="myComment" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="photoRelated" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Photo" inverseName="photoComments" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <entity name="Photo" representedClassName="Photo" syncable="YES">
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="myLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="uniqueID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="photoComments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comments" inverseName="photoRelated" inverseEntity="Comments" syncable="YES"/>
+        <relationship name="photographer" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="photoTaken" inverseEntity="Users" syncable="YES"/>
+    </entity>
+    <entity name="Users" representedClassName="Users" syncable="YES">
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="photoTaken" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="photographer" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Comments" positionX="-414" positionY="-0" width="128" height="88"/>
+        <element name="Photo" positionX="-128" positionY="-117" width="128" height="133"/>
+        <element name="Users" positionX="117" positionY="-297" width="128" height="88"/>
+    </elements>
+</model>
