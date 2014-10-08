@@ -20,6 +20,7 @@ Issues:
 
 1. No unique username checking for now
 2. Comments Part still in progress 
+3. Photo Display Order
 
 List of generic things implemented:
 
@@ -33,9 +34,25 @@ Sign up button opens a generic view controller to sign up.
 
 ![Alt text](/images/login.png?raw=true "Login VC")
 
+### Adding Photos to the Feed and Store photo information in Core Data
+
+Click the image to click picture from camera or pick photo from the camera roll/photo library
+
+Photo information, i.e., the photo title along with which user took it and photoURL in the photo-library
+is saved in Core Data
+
+![Alt text](/images/takePhoto1.png?raw=true)
+![Alt text](/images/takePhoto2.png?raw=true)
+![Alt text](/images/takePhoto3.png?raw=true)
+![Alt text](/images/takePhoto4.png?raw=true)
+![Alt text](/images/takePhoto5.png?raw=true)
+![Alt text](/images/takePhoto6.png?raw=true)
+
 ### News feed pulling data from Core Data and putting it in Custom UITableViewCells  
 
 This table view controller displays all the feed. 
+
+Photos being displayed is shown by saving the URL of the photo in the camera roll/photo library
 
 The photos are stored in the photo library but I save the photo URL to not save photos in Core Data as binary.
 
